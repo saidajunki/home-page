@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    container_name: home-page
+    restart: unless-stopped
+    networks:
+      - apps-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.home-page.rule=Host(`app.babl.tech`)"
+      - "traefik.http.routers.home-page.tls=true"
+      - "traefik.http.routers.home-page.tls.certresolver=letsencrypt"
+      - "traefik.http.services.home-page.loadbalancer.server.port=3000"
+
+networks:
+  apps-network:
+    external: true
