@@ -202,9 +202,27 @@ export function FeaturedAppSection({ app }: FeaturedAppSectionProps) {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <span className="inline-block px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full text-white/60 text-sm">
-            Coming Soon
-          </span>
+          <a
+            href={app.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-medium rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30"
+          >
+            <span>詳しく見る</span>
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </a>
         </motion.div>
       </motion.div>
     </section>

@@ -24,7 +24,7 @@ export const apps: AppData[] = [
     name: 'QALinker',
     tagline: '人間の集合知 × AI仲介',
     description: '人間をAIモデルのように使う、新しいQ&Aプラットフォーム。AIは回答を生成せず、徹底的に「仲介」に徹する。複数の人間回答者からの知見を統合し、確実性の高い回答を提供します。',
-    url: '#',
+    url: 'https://q-a-linker.app.babl.tech',
     gradient: {
       from: '#1a1a2e',
       to: '#16213e',
