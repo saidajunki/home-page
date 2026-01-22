@@ -19,5 +19,5 @@ jobs:
             cd /opt/apps/home-page
             git pull origin main
             cd apps/web-app
-            docker compose -p home-page down
+            docker rm -f home-page 2>/dev/null || true
             docker compose -p home-page up -d --build
