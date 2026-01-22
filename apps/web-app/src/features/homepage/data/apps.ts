@@ -54,36 +54,33 @@ export const apps: AppData[] = [
     ],
   },
   {
-    id: 'app-1',
-    name: 'Quantum',
-    tagline: 'データを美しく',
-    description: '次世代のデータ分析プラットフォーム。複雑なデータを美しく可視化します。',
-    url: 'https://google.com',
+    id: 'git-nl',
+    name: 'git-nl',
+    tagline: '自然言語駆動開発のためのGitホスティング',
+    description: '仕様書（specs/）とルール（rules/）を中心に管理・閲覧できるGitリモートリポジトリ。AI駆動開発を見据え、要件定義書やコーディングルールの可視化に特化。',
+    url: 'https://git-nl.app.babl.tech',
     gradient: {
-      from: '#722F37',
-      to: '#0a0a0a',
+      from: '#1e3a5f',
+      to: '#0d1b2a',
     },
+    features: [
+      {
+        title: '仕様書の可視化',
+        description: 'リポジトリ内のspecs/ディレクトリを読みやすく表示。要件定義書を中心とした開発フローを支援。',
+      },
+      {
+        title: 'ルール管理',
+        description: 'rules/ディレクトリのルール種類（security/coding/testing等）の割合を可視化。チームの品質基準を一目で把握。',
+      },
+      {
+        title: '自前Gitホスティング',
+        description: 'clone/fetch/pushをサポート。PATによる認証でセキュアなpush操作を実現。',
+      },
+      {
+        title: 'カバレッジ表示',
+        description: 'テストカバレッジレポートを取り込み、品質指標を可視化。',
+      },
+    ],
   },
-  {
-    id: 'app-2',
-    name: 'Nebula',
-    tagline: 'チームの生産性を最大化',
-    description: 'クラウドネイティブなプロジェクト管理ツール。チームの生産性を最大化。',
-    url: 'https://google.com',
-    gradient: {
-      from: '#4a1f24',
-      to: '#722F37',
-    },
-  },
-  {
-    id: 'app-3',
-    name: 'Aurora',
-    tagline: 'アイデアを形に',
-    description: 'AIを活用したクリエイティブアシスタント。あなたのアイデアを形に。',
-    url: 'https://google.com',
-    gradient: {
-      from: '#0a0a0a',
-      to: '#4a1f24',
-    },
-  },
+
 ];
