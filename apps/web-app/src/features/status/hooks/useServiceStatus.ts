@@ -94,7 +94,8 @@ export function useServiceStatus(serviceId: string) {
 
   useEffect(() => {
     fetchStatus();
-    const interval = setInterval(fetchStatus, 60000);
+    // 5秒ごとに更新
+    const interval = setInterval(fetchStatus, 5000);
     return () => clearInterval(interval);
   }, [fetchStatus]);
 

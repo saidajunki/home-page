@@ -56,7 +56,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
         </div>
         <CpuChart data={cpuHistory} />
         <p className="text-xs text-gray-400 mt-2">
-          ※ 1分ごとに更新されます。ページを開いている間のみデータが蓄積されます。
+          ※ 5秒ごとに更新されます。ページを開いている間のみデータが蓄積されます。
         </p>
       </div>
 

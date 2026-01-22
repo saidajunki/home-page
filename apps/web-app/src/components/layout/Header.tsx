@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navItems = [
   { label: 'About Us', href: '#about' },
   { label: 'Apps', href: '#apps' },
+  { label: 'Status', href: '/status' },
 ];
 
 export function Header() {
