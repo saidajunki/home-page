@@ -1,6 +1,7 @@
 services:
   app:
     build: .
+    image: home-page-app:latest
     container_name: home-page
     restart: unless-stopped
     networks:
